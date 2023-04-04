@@ -3,8 +3,11 @@ import useCounter from "../Hooks/use-counter";
 
 import Card from "./Card";
 
+
+// state created inside useCounter becomes tied to this component: 
+
 const ForwardCounter = () => {
-  let counter = useCounter();
+  const counter = useCounter();
 
   return <Card>{counter}</Card>;
 };
