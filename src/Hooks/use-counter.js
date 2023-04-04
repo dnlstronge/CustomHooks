@@ -12,5 +12,6 @@ const [counter, setCounter] = useState(0);
       
           return () => clearInterval(interval);
         }, []);
+        return counter;
     }
 export default useCounter;
