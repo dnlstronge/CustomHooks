@@ -10,7 +10,7 @@ const [counter, setCounter] = useState(0);
           const interval = setInterval(() => {
             if(forwards) {
             setCounter((prevCounter) => prevCounter + 1);}
-            if(!forwards) {
+            else {
             setCounter((prevCounter) => prevCounter - 1)
             }
           }, 1000);
